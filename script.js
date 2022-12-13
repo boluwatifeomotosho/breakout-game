@@ -254,7 +254,7 @@ canvas.addEventListener('click', function (e) {
   update();
   ins.classList.add('hide');
   gameOvrMes.classList.remove('show');
-});
+}, {once: true});
 
 // Rules and close event handlers
 rulesBtn.addEventListener('click', () => rules.classList.add('show'));
