@@ -250,6 +250,11 @@ init();
 document.addEventListener('keydown', keyDown);
 document.addEventListener('keyup', keyUp);
 document.addEventListener('keydown', start, { once: true });
+canvas.addEventListener('click', function (e) {
+  update();
+  ins.classList.add('hide');
+  gameOvrMes.classList.remove('show');
+});
 
 // Rules and close event handlers
 rulesBtn.addEventListener('click', () => rules.classList.add('show'));
